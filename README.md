@@ -1,6 +1,6 @@
 🖼️ Image Scraper Flask App
 
-A simple yet powerful Flask web application that allows users to search for images from Google, download them locally, and store them in MongoDB Atlas.
+A simple yet powerful Flask web application that allows users to search for images from Google, download them locally.
 This project demonstrates web scraping, Flask-based web development.
 
 🚀 Features
