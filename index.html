@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Downloader</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="main-container">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <i class="fa-regular fa-image"></i>
+        </div>
+        <h1>Image Downloader</h1>
+        <p>Copy and paste name to extract images with ease.</p>
+    </div>
+
+    <!-- Search Box -->
+    <form action="/review" method="POST" class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+
+        <input
+            type="text"
+            name="content"
+            placeholder="Search Here"
+            required
+        >
+
+        <button type="submit" class="go-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </form>
+
+    <span class="info-text">
+        It may take a few seconds to analyze the webpage. No data will be stored.
+    </span>
+
+</div>
+
+</body>
+</html>
